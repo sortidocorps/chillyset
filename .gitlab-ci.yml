@@ -1,0 +1,42 @@
+image: docker.artifactory.michelin.com/michelin-tools:1.0-alpine3.8
+
+stages:
+  - build
+  - deploy
+
+variables:
+  MAVEN_CLI_OPTS: "--batch-mode"
+  MAVEN_OPTS: "-Dmaven.repo.local=.m2/repository"
+
+
+cache:
+ key: ${CI_COMMIT_REF_SLUG}
+ paths: 
+   - .m2/repository/
+   - "target/"
+
+build:
+  stage: build
+  script:
+    - ls
+    - mvn -B clean compile
+  only:
+    - master
+  tags:
+    - k8s, dif
+
+deploy_job:
+  stage: deploy
+  script:
+    - echo 'ici'
+    - ls
+    - git config --global user.email "nicolas.birnbaum1_ext@michelin.com"
+    - git config --global user.name "Nicolas"
+    - git checkout "$CI_BUILD_REF_NAME" || git checkout -B "$CI_BUILD_REF_NAME"
+    - git reset --hard origin/master
+    - mvn $MAVEN_CLI_OPTS release:clean release:prepare release:perform -B -X -DscmCommentPrefix="[skip ci]" -Dusername=$USERNAME -Dpassword=$PASSWORD -Dldap.login=$USERNAME -Dldap.password=$ARTIFACTORY_PWD -Darguments="-DskipTests" -Darguments="-Dmaven.javadoc.skip=true"
+  only:
+    - master
+  tags:
+    - k8s, dif
+  when: manual

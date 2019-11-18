@@ -1,0 +1,5 @@
+2019-11-15 11:15:48.099  INFO 12484 --- [RMI TCP Connection(8)-10.232.24.9] o.a.c.c.C.[Tomcat].[localhost].[/perf]   : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-11-15 11:15:48.105  INFO 12484 --- [RMI TCP Connection(8)-10.232.24.9] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-11-15 11:15:48.124  INFO 12484 --- [RMI TCP Connection(8)-10.232.24.9] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2019-11-15 11:28:51.629  INFO 12484 --- [http-nio-8082-exec-9] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-11-15 11:28:51.734 DEBUG 12484 --- [http-nio-8082-exec-9] org.hibernate.SQL                        : select hugeobject0_.id as id1_0_, hugeobject0_.comment as comment2_0_, hugeobject0_.name as name3_0_ from huge_object hugeobject0_

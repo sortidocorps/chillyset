@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-chillysetApplication<pastry>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.michelin.chillyset.chillysetApplication",
+            "projectName": "pastry",
+            "args": ""
+        }
+    ]
+}
