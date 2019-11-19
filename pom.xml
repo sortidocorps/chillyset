@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	
-	<groupId>com.michelin</groupId>
+	<groupId>com.performance</groupId>
 	<artifactId>chillyset</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>chillyset</name>
@@ -13,15 +13,15 @@
 	<distributionManagement>
 		<repository>
 			<id>central</id>
-			<url>https://artifactory.michelin.com/libs-release</url>
+			<url>https://artifactory.performance.com/libs-release</url>
 		</repository>
 		<snapshotRepository>
 			<id>snapshots</id>
-			<url>https://artifactory.michelin.com/libs-snapshot</url>
+			<url>https://artifactory.performance.com/libs-snapshot</url>
 		</snapshotRepository>
 	</distributionManagement>
 	<scm>
-		<developerConnection>scm:git:https://gitlab.michelin.com/integration/APIM/tools/chillyset.git</developerConnection>
+		<developerConnection>scm:git:https://gitlab.performance.com/integration/APIM/tools/chillyset.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
 	<parent>

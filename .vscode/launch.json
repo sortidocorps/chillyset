@@ -6,7 +6,7 @@
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "console": "internalConsole",
-            "mainClass": "com.michelin.chillyset.chillysetApplication",
+            "mainClass": "com.performance.chillyset.chillysetApplication",
             "projectName": "pastry",
             "args": ""
         }

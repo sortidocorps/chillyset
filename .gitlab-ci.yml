@@ -1,4 +1,4 @@
-image: docker.artifactory.michelin.com/michelin-tools:1.0-alpine3.8
+image: docker.artifactory.perfomrance.com/dsds-tools:1.0-alpine3.8
 
 stages:
   - build
@@ -30,7 +30,7 @@ deploy_job:
   script:
     - echo 'ici'
     - ls
-    - git config --global user.email "nicolas.birnbaum1_ext@michelin.com"
+    - git config --global user.email "nicolas.@.com"
     - git config --global user.name "Nicolas"
     - git checkout "$CI_BUILD_REF_NAME" || git checkout -B "$CI_BUILD_REF_NAME"
     - git reset --hard origin/master

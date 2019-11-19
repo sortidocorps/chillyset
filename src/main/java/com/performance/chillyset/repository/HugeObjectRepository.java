@@ -1,6 +1,6 @@
-package com.michelin.chillyset.repository;
+package com.performance.chillyset.repository;
 
-import com.michelin.chillyset.model.HugeObject;
+import com.performance.chillyset.model.HugeObject;
 
 import org.springframework.data.repository.CrudRepository;
 

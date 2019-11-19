@@ -1,4 +1,4 @@
-package com.michelin.chillyset.controller.error;
+package com.performance.chillyset.controller.error;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

@@ -1,6 +1,6 @@
-package com.michelin.chillyset.repository;
+package com.performance.chillyset.repository;
 
-import com.michelin.chillyset.model.SimpleObject;
+import com.performance.chillyset.model.SimpleObject;
 
 import org.springframework.data.repository.CrudRepository;
 

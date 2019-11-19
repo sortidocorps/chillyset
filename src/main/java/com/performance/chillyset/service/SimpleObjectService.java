@@ -1,8 +1,8 @@
-package com.michelin.chillyset.service;
+package com.performance.chillyset.service;
 
-import com.michelin.chillyset.controller.error.BeeNotFoundException;
-import com.michelin.chillyset.model.SimpleObject;
-import com.michelin.chillyset.repository.SimpleObjectRepository;
+import com.performance.chillyset.controller.error.BeeNotFoundException;
+import com.performance.chillyset.model.SimpleObject;
+import com.performance.chillyset.repository.SimpleObjectRepository;
 
 import org.springframework.stereotype.Service;
 

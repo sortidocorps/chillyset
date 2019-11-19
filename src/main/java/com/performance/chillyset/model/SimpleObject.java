@@ -1,4 +1,4 @@
-package com.michelin.chillyset.model;
+package com.performance.chillyset.model;
 
 import javax.persistence.*;
 

@@ -1,4 +1,4 @@
-package com.michelin.chillyset;
+package com.performance.chillyset;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

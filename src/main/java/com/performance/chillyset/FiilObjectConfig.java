@@ -1,7 +1,7 @@
-package com.michelin.chillyset;
+package com.performance.chillyset;
 
-import com.michelin.chillyset.model.HugeObject;
-import com.michelin.chillyset.service.HugeObjectService;
+import com.performance.chillyset.model.HugeObject;
+import com.performance.chillyset.service.HugeObjectService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.event.ApplicationReadyEvent;

@@ -1,4 +1,4 @@
-package com.michelin.chillyset;
+package com.performance.chillyset;
 
 import com.fasterxml.jackson.databind.Module;
 import com.fasterxml.jackson.datatype.hibernate5.Hibernate5Module;
@@ -11,8 +11,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
-@EnableJpaRepositories("com.michelin.chillyset.repository")
-@EntityScan("com.michelin.chillyset.model")
+@EnableJpaRepositories("com.performance.chillyset.repository")
+@EntityScan("com.performance.chillyset.model")
 @SpringBootApplication
 @EnableSwagger2
 public class ChillySetApplication {

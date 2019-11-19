@@ -1,8 +1,8 @@
-package com.michelin.chillyset.controller;
+package com.performance.chillyset.controller;
 
 
-import com.michelin.chillyset.model.SimpleObject;
-import com.michelin.chillyset.service.SimpleObjectService;
+import com.performance.chillyset.model.SimpleObject;
+import com.performance.chillyset.service.SimpleObjectService;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

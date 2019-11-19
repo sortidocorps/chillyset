@@ -1,4 +1,4 @@
-package com.michelin.chillyset;
+package com.performance.chillyset;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -35,7 +35,7 @@ public class SpringFoxConfig {
         return new Docket(DocumentationType.SWAGGER_2)
                 .groupName("training-api-1")
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.michelin.chillyset.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.performance.chillyset.controller"))
                 .paths(PathSelectors.ant("/api/v1/**"))
                 .build()
                 .apiInfo(getApiInfo("1.0"));
@@ -46,7 +46,7 @@ public class SpringFoxConfig {
         return new Docket(DocumentationType.SWAGGER_2)
                 .groupName("training-api-1.1")
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.michelin.chillyset.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.performance.chillyset.controller"))
                 .paths(PathSelectors.ant("/api/v1.1/**"))
                 .build()
                 .apiInfo(getApiInfo("1.1"));
@@ -57,7 +57,7 @@ public class SpringFoxConfig {
         return new Docket(DocumentationType.SWAGGER_2)
                 .groupName("training-api-2")
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.michelin.chillyset.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.performance.chillyset.controller"))
                 .paths(PathSelectors.ant("/api/v2/**"))
                 .build()
                 .apiInfo(getApiInfo("2.0"));
@@ -69,7 +69,7 @@ public class SpringFoxConfig {
                 "CHILLYSET Performance API",
                 version,
                 "TERMS OF SERVICE URL",
-                new Contact("Dif","http://developers.michelin.com/","EMAIL"),
+                new Contact("Dif","http://developers.performance.com/","EMAIL"),
                 "LICENSE",
                 "LICENSE URL",
                 Collections.emptyList()

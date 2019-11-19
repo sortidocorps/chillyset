@@ -1,4 +1,4 @@
-package com.michelin.chillyset.controller;
+package com.performance.chillyset.controller;
 
 
 import io.swagger.annotations.Api;
